@@ -1,0 +1,6 @@
+name: Node JSON Data
+description: accept API from the user and return JSON data on the Node.
+type: module
+version: 1.0
+core: 8.x
+configure: node_json_data.admin_settings

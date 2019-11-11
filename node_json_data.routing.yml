@@ -1,0 +1,17 @@
+Node_json_data.admin_settings:
+  path: '/admin/config/nodejsondata'
+  defaults:
+    _form: '\Drupal\node_json_data\Form\ModuleConfigurationForm'
+    _title: 'Node_json_data configuration screen'
+  requirements:
+    _permission: 'administer site configuration'
+
+node_json_data.json_data:
+  path: '/data/{apikey}/{node_id}'
+  defaults:
+    _controller: '\Drupal\node_json_data\Controller\NodeJsonDataController::checkAccess'
+    _title: 'Node_json_data configuration screen'
+  requirements:
+    _permission: 'administer site configuration'
+  
+
