@@ -33,6 +33,7 @@ class ModuleConfigurationForm extends ConfigFormBase {
     $form['api_key'] = [
       '#type' => 'textfield',
       '#title' => $this->t('Enter Api key'),
+      '#size' => 16,
       '#default_value' => $config->get('api_key'),
     ];
 
